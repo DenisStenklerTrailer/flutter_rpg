@@ -77,6 +77,9 @@ class Character with Stats {
       character.toggleIsFav();
     }
 
+    // assign points & stats
+    character.setStats(points: data['points'], stats: data['stats']);
+
     return character;
   }
 }
